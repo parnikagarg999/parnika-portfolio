@@ -30,6 +30,10 @@ node scripts/build.mjs
 
 The production-ready site is written to `dist/`.
 
+## Share the live portfolio
+
+The complete browser-ready HTML package is committed in `dist/`. To make it available as a normal public website, enable **Settings → Pages → Source → GitHub Actions** once in GitHub. The deployment workflow will then publish future updates automatically.
+
 ## Project structure
 
 ```text

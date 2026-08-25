@@ -135,6 +135,20 @@ When asked to build or improve the portfolio:
 6. Fix errors.
 7. Summarize changed files and verification results.
 
+## GitHub-ready delivery
+
+When the user asks to keep or share the portfolio through GitHub:
+
+1. Run the build and retain the complete static site in `dist/` (`index.html`, CSS, JavaScript, and assets).
+2. Commit both the editable source files and `dist/` to the configured GitHub repository so the finished HTML package is preserved with the project.
+3. Keep the GitHub Pages deployment workflow in `.github/workflows/deploy-pages.yml` so future pushes can update the hosted site automatically.
+4. Clearly distinguish the two GitHub experiences:
+   - Repository links show downloadable source and report files.
+   - A browser-ready portfolio link requires GitHub Pages to be enabled once in the repository settings with **Settings → Pages → Source → GitHub Actions**.
+5. After Pages is enabled, use and share the URL `https://<github-username>.github.io/<repository-name>/`.
+
+GitHub's standard file viewer does not render an HTML file as a live web page. Do not claim that clicking `index.html` in the repository will open the designed portfolio; use the GitHub Pages link for that purpose.
+
 ## Current content seed
 
 Use these facts as initial content only; replace or expand them when the user's CV provides more precise information:
